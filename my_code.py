@@ -7,12 +7,13 @@ def make_dict():
     keys = ['Ten', 'Twenty', 'Thirty']
     values = [10, 20, 30]
     '''
-    currency =          # complete this line
+    currency = {"Ten":10, "Twenty":20, "Thirty":30}      # complete this line
 
     return currency
 
 def add_element():
     foods = {'fruit': 'apple', 'veggie': 'carrot', 'grain': 'barley'}
+    foods["dairy"] = "yogurt"
     # add a key value pair 'dairy': 'yogurt' to the following dictionary
 
     # add code here
@@ -21,6 +22,7 @@ def add_element():
 
 def remove_element():
     foods = {'fruit': 'apple', 'veggie': 'carrot', 'grain': 'barley'}
+    del foods["veggie"]
     # remove 'veggie': 'carrot' from the dictionary
 
 
@@ -30,15 +32,16 @@ def merge_dict():
     # Merge these two dictionaries together so the contents are in numerical order:
     dict1 = {'Ten': 10, 'Twenty': 20, 'Thirty': 30}
     dict2 = {'Thirty': 30, 'Fourty': 40, 'Fifty': 50}
+    dict2.update(dict1)
     # add code here
 
-    return     # return new dictionary
+    return(dict2)     # return new dictionary
 
 def access_key():
     # return the value of the key 'Twenty'
     currency = {'Ten': 10, 'Twenty': 20, 'Thirty': 30}
 
-    val =             # add code to assign the desired value to 'val'
+    val =  currency["Twenty"]           # add code to assign the desired value to 'val'
     return val
 
 
